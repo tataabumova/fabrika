@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>BURO</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/dragdrop.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4">
+                 <div class="sidebar text-center">
+                        <div class="logo_block">
+                            <!--<span class="logo">BURO</span>-->
+                            <div class="logo">
+                                <span class="logo_helper"><img src="img/logo.png"></span>
+                            </div>
+                        </div>
+                        <p class="logo_text">Дизайн, инновации,<br> строительство</p>
+
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active"><a href="index.html">Мои объекты</a></li>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="message.html">Сообщения</a></li>
+                            <li><a href="#">Настройки</a></li>
+                        </ul>
+
+                        <div class="contacts">
+                            <div class="contacts_block">
+                                <span class="contacts_text">свяжитесь с нами</span>
+                            </div>
+                            <p class="contacts_tel">+7 (495) 444-55-66</p>
+                            <button type="button" class="btn btn-default btn-lg btn_exit">Выход</button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 main">
+                <div class="head clearfix">
+                    <div class="wrapper">
+                        <div class="head_title">
+                            <i class="demo-icon icon-right-small"></i>
+                            <p class="page_title">Документы</p>
+                        </div>
+                        <div class="page_back">
+                            <div class="page_back_block"><a href="#">Назад на сайт</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page_content">
+                    <div class="wrapper">
+                        <div class="table_border">
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Название файла</th>
+                                        <th>Автор</th>
+                                        <th>Дата загрузки</th>
+                                        <th width="7%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>договор.doc</td>
+                                    <td>Вы</td>
+                                    <td>02 января 2015 в 01:45</td>
+                                    <td><i class="demo-icon icon-pencil"></i><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>квитанция.pdf</td>
+                                    <td>Вы</td>
+                                    <td>02 января 2015 в 01:45</td>
+                                    <td><i class="demo-icon icon-pencil"></i><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>шаблон_договора.pdf</td>
+                                    <td>Администратор</td>
+                                    <td>02 января 2015 в 01:45</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                        <form action="./upload.php">
+                            <div id="dropZone" class="plus_file">
+                                <form enctype="multipart/form-data" method="post">
+                                    <i class="demo-icon icon-inbox"></i>Перетащите сюда файл для загрузки или <input class="upload_file" type="file"><a class="upload_a" href="#">выберите его</a>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auto_size_script.js"></script>
+    <script>
+        autosize(document.querySelectorAll('textarea'));
+    </script>
+    <script src="js/script.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
